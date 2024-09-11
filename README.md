@@ -224,3 +224,33 @@ Even though the `post_save` signal was triggered, no record was added to `Signal
 ### Conclusion
 
 By default, Django signals run in the same database transaction as the caller. If the transaction is rolled back, any database operations performed by the signal handler will also be rolled back, ensuring consistency.
+
+
+
+
+# Custom class problem
+(link to file)[https://github.com/amal-babu-git/django-assignment/blob/main/custom_class_problem/custom_class_problem.py]
+```python
+class Rectangle:
+    def __init__(self, length: int, width: int):
+        """Initialize the Rectangle with length and width."""
+        self.length = length
+        self.width = width
+
+    def __iter__(self):
+        """Make the class iterable, returning length first, then width."""
+        self._data = iter([{'length': self.length}, {'width': self.width}])
+        return self
+
+    def __next__(self):
+        """Return the next value in the iteration."""
+        return next(self._data)
+
+# Create a Rectangle instance
+rect = Rectangle(10, 5)
+
+# Iterate over the instance
+for dimension in rect:
+    print(dimension)
+
+```
