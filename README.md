@@ -4,7 +4,7 @@ This is my answers...
 
 # Django Signals: Synchronous or Asynchronous?
 
-## Question
+## Question 1
 
 Are Django signals executed synchronously or asynchronously by default? Please support your answer with a code snippet that conclusively proves your stance.
 
