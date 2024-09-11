@@ -254,3 +254,50 @@ for dimension in rect:
     print(dimension)
 
 ```
+
+
+
+
+
+## Installation
+
+To install and run this project locally using `uv`, follow these steps:
+
+1. **Clone the repository:**
+
+    ```sh
+    git clone https://github.com/amal-babu-git/django-assignment.git
+    cd django-assignment
+    ```
+
+2. **Install `uv` and sync dependencies:**
+
+    ```sh
+    pip install uv
+    uv sync
+    ```
+
+3. **Apply the migrations:**
+
+    ```sh
+    uv python manage.py migrate
+    ```
+
+4. **Run the development server:**
+
+    ```sh
+    uv python manage.py runserver
+    ```
+
+5. **Open your web browser and navigate to:**
+
+    ```
+    http://127.0.0.1:8000/myall/create  # for question 1 and 2
+    http://127.0.0.1:8000/myall/create3 # for question 3
+    ```
+
+    output will displays on the terminal
+
+
+or instead of using uv for package managing , pip with virtualenv also will  works fine
+
