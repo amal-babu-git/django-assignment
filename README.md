@@ -229,7 +229,7 @@ By default, Django signals run in the same database transaction as the caller. I
 
 
 # Custom class problem
-(link to file)[https://github.com/amal-babu-git/django-assignment/blob/main/custom_class_problem/custom_class_problem.py]
+[link to file](https://github.com/amal-babu-git/django-assignment/blob/main/custom_class_problem/custom_class_problem.py)
 ```python
 class Rectangle:
     def __init__(self, length: int, width: int):
