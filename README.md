@@ -55,7 +55,6 @@ To demonstrate this, here’s a basic example using the `post_save` signal:
             import myapp.signals
     ```
 
-    Make sure to set this config in `myapp/__init__.py`:
 
     ```python
     default_app_config = 'myapp.apps.MyappConfig'
