@@ -9,3 +9,6 @@ class MyModel(models.Model):
     
     def __str__(self):
         return self.name
+
+class SignalModel(models.Model):
+    description = models.CharField(max_length=100)
